@@ -46,10 +46,12 @@ nav button {
 nav span {
   flex-grow: 0.5;
 }
+
 /*navigation bar*/
 
 /*first section*/
 .fs {
+  margin-top: 2%;
   color: white;
   margin-inline: auto;
   max-width: 60%;
@@ -59,6 +61,8 @@ nav span {
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
+
+  
 }
 
 .fs h1 {
@@ -85,13 +89,13 @@ nav span {
 }
 
 .fs video {
-  margin: 30px;
+  width: 100%;
 }
 
 .fs-lower-part {
   color: white;
   margin-inline: auto;
-  max-width: 90%;
+  max-width: 85%;
   text-align: center;
   margin-top: 30px;
   
@@ -125,7 +129,15 @@ nav span {
 /*first section*/
 
 /* responsive */
-@media (max-width: 1279px) {
+@media (max-width: 1024px) {
+  section {
+    margin-top: 30px;
+  }
+  .fs {
+      margin-inline: auto;
+      max-width: 90%;
+    }
+
   nav div {
     justify-content: space-around;
 
@@ -140,42 +152,11 @@ nav span {
   }
 }
 
-@media (max-width: 767px) {
-  nav button {
-    display: none;
-  }
-
-  .fs {
-    margin-inline: auto;
-    max-width: 95%;
-  }
-
-  .fs video {
-    width: 100%;
-  }
-
-  .fs h1 {
-    font-size: 40px;
-  }
-  
-  .fs-lower-part {
-    margin-inline: auto;
-    max-width: 85%;
-  }
-  .fs-lower-part h2 {
-    font-size: 30px ;
-  }
-
-  .fs-grid-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10%;
-    row-gap: 10%;
-  }
-
-}
-
 @media (max-width: 480px) {
+  section {
+      margin-top: 80px;
+  }
+
   nav div h1 {
     display: none;
   }
@@ -186,7 +167,12 @@ nav span {
 
   .fs {
     margin-inline: auto;
-    max-width: 90%;
+    max-width: 85%;
+  }
+
+  .fs h1 {
+    font-size: 35px;
+    text-align: center;
   }
 
   .fs video {
